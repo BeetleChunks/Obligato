@@ -1,0 +1,21 @@
+#pragma once
+
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <map>
+#include <queue>
+#include <string>
+#include <iomanip>
+#include <format>
+#include <memory>
+#include <any>
+#include <Windows.h>
+#include <intsafe.h>
+#include "imgui.h"
+#include "imgui_impl_win32.h"
+#include "imgui_impl_dx12.h"
+#include "IconsFontAwesome6.h"
+#include <d3d12.h>
+#include <dxgi1_4.h>
+#include <tchar.h>
