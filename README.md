@@ -1,6 +1,8 @@
 # Obligato
 This project is an implant framework designed for long term persistent access to Windows machines. The goals are centered around disassociating implant tasks and network activity from the implant service. The primary intended use if for maintaining or regaining access to compromised endpoints.
 
+![img](./media/ObClientGUI.png)
+
 The initial release is the code used in the demos for my DEFCON 31 talk [Malware Design - Abusing legacy Microsoft transports and session architecture](https://forum.defcon.org/node/245731). This does not implement the access controls and transport encryption layers. These features will be pushed after integrating the existing functionality of the command-line agent into the GUI. I am currently the only developer, so community help is welcome!
 
 Please checkout my talk or the companion slides to get more details and specifics on the underlying components, functionality, and use cases.
