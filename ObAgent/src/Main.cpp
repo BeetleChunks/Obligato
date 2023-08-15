@@ -7,44 +7,10 @@ void AgentDbg(_In_ const std::wstring& msg) {
 }
 
 int wmain(int argc, wchar_t* argv[]) {
-	/*
-		ObAgent.exe StartMsServer -Ms obligato
-
-		ObAgent.exe AddMsNotify  -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606
-		ObAgent.exe DelMsNotify  -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606
-		ObAgent.exe SendMsNotify -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -n OpSuccess
-		
-		ObAgent.exe AddUser -dMs obligato -dNb DESKTOP-77IPO7G -d corp -u Ghost -p P4ssw0rd
-		ObAgent.exe AddUser -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -d corp -u Ghost -p P4ssw0rd
-
-		ObAgent.exe DelUser -dMs obligato -dNb DESKTOP-77IPO7G -d corp -u Ghost
-		ObAgent.exe DelUser -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -d corp -u Ghost
-
-		ObAgent.exe AddGroup -dMs obligato -dNb DESKTOP-77IPO7G -d corp -g AppLocal -c SomeComment
-		ObAgent.exe AddGroup -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -d corp -g AppLocal -c SomeComment
-
-		ObAgent.exe DelGroup -dMs obligato -dNb DESKTOP-77IPO7G -d corp -g AppLocal
-		ObAgent.exe DelGroup -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -d corp -g AppLocal
-
-		ObAgent.exe AddGroupMem -dMs obligato -dNb DESKTOP-77IPO7G -d corp -g AppLocal -m Ghost
-		ObAgent.exe AddGroupMem -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -d corp -g AppLocal -m Ghost
-
-		ObAgent.exe RmGroupMem -dMs obligato -dNb DESKTOP-77IPO7G -d corp -g AppLocal -m Ghost
-		ObAgent.exe RmGroupMem -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -d corp -g AppLocal -m Ghost
-
-		ObAgent.exe AddPriv -dMs obligato -dNb DESKTOP-77IPO7G -e Ghost -Pr SE_DEBUG_NAME
-		ObAgent.exe AddPriv -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -e Ghost -Pr SeDebugPrivilege
-
-		ObAgent.exe RmPriv -dMs obligato -dNb DESKTOP-77IPO7G -e Ghost -Pr SE_DEBUG_NAME
-		ObAgent.exe RmPriv -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -e Ghost -Pr SeDebugPrivilege
-
-		ObAgent.exe SpwnProc -dMs obligato -dNb DESKTOP-77IPO7G -An "" -Aa "C:\Windows\System32\cmd.exe" -Ac "" -d corp -u Ghost
-		ObAgent.exe SpwnProc -dMs obligato -dNb DESKTOP-77IPO7G -Ms obnotify -Nb DESKTOP-NJSH606 -An "" -Aa "C:\Windows\System32\cmd.exe" -Ac "" -d corp -u Ghost
-	*/
-	
 	if (argc == 1) {
 		//ObEngine::StartMailslotServer(std::wstring(L"obligato"));
-		ObEngine::StartUdpSocketServer(std::wstring(L"0.0.0.0"), 11337);
+		//ObEngine::StartUdpSocketServer(std::wstring(L"0.0.0.0"), 11337);
+		return 0;
 	}
 	else if (argc > 2) {
 		std::wstring task = argv[1];
