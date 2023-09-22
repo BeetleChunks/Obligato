@@ -926,7 +926,7 @@ void NotifyCb::OnAddUdpSocket(PTP_CALLBACK_INSTANCE instance, PVOID context) {
 			data->id));
 	}
 	else {
-		Helpers::DbgPrint(std::format(L"[Info][OnAddUdpSocket] Added mailslot route (ID:{}) -> udp:socket://{}:{}",
+		Helpers::DbgPrint(std::format(L"[Info][OnAddUdpSocket] Added UDP socket route (ID:{}) -> udp:socket://{}:{}",
 			data->id, data->addr, data->port));
 	}
 

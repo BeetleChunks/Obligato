@@ -154,7 +154,7 @@ bool UdpSocket::Client::Send(const ObEngineRef::MessageHeader& Message, const DW
 
 	std::string AddrStr = Helpers::ws2s(_Address);
 
-	if (::DWordToInt(dwMsgSize, &MsgSize)) {
+	if (::DWordToInt(dwMsgSize, &MsgSize) != S_OK) {
 		Helpers::DbgPrint(L"[Error][UdpSocket::Client::Send()] Converting DWORD msg size to int");
 		return false;
 	}
