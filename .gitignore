@@ -1,3 +1,9 @@
+# Binary Locations
+bin/ObAgent/*
+bin/ObClient/*
+bin/ObEngine/*
+bin/ObService/*
+
 # VS Directories
 .vs/
 
